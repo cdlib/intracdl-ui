@@ -1,0 +1,86 @@
+{
+  "name": "intracdl-ui",
+  "version": "1.0.0",
+  "description": "The UI for the IntraCDL website",
+  "scripts": {
+    "serve": "npm-run-all clean --parallel parcel-dev fractal-dev watchstyles watchjs --silent",
+    "build": "run-s clean parcel-build fractal-build lintstyles lintjs --silent",
+    "clean": "del fractal-dist dist",
+    "fractal-dev": "fractal start --sync --watch",
+    "fractal-build": "fractal build",
+    "parcel-dev": "parcel watch css/main.css js/main.js images/* --dist-dir dist --public-url . --no-cache",
+    "parcel-build": "parcel build css/main.css js/main.js images/* --dist-dir dist --public-url . --no-cache --no-source-maps",
+    "watchstyles": "onchange -i css/* -- npm run lintstyles",
+    "watchjs": "onchange -i js/* -- npm run lintjs",
+    "lintstyles": "stylelint css/*",
+    "lintjs": "standard js/* --verbose | snazzy || exit 0",
+    "update-caniuse-lite": "npx browserslist@latest --update-db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdlib/intracdl-ui.git"
+  },
+  "author": "JoelCDL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdlib/intracdl-ui/issues"
+  },
+  "homepage": "https://github.com/cdlib/intracdl-ui#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@fortawesome/fontawesome-pro": "^6.3.0",
+    "@frctl/fractal": "^1.5.15",
+    "@parcel/optimizer-data-url": "^2.8.3",
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "del-cli": "^5.0.0",
+    "modern-normalize": "^1.1.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "parcel": "^2.8.3",
+    "parcel-namer-custom": "^0.2.0",
+    "snazzy": "^9.0.0",
+    "source-sans": "^3.46.0",
+    "standard": "^17.0.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "alias": {
+    "fa-brands/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/brands/$1",
+    "fa-light/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/light/$1",
+    "fa-regular/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/regular/$1",
+    "fa-sharp-solid/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/sharp-solid/$1",
+    "fa-solid/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/solid/$1",
+    "fa-thin/*": "./node_modules/@fortawesome/fontawesome-pro/svgs/thin/$1"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "@parcel/transformer-css": {
+    "drafts": {
+      "customMedia": true,
+      "nesting": true
+    },
+    "errorRecovery": true
+  },
+  "stylelint": {
+    "defaultSeverity": "warning",
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-property-sort-order-smacss"
+    ],
+    "rules": {
+      "max-nesting-depth": [
+        2,
+        {
+          "ignore": [
+            "blockless-at-rules",
+            "pseudo-classes"
+          ]
+        }
+      ],
+      "import-notation": null,
+      "string-quotes": null
+    }
+  }
+}

@@ -1,0 +1,6 @@
+dist
+.DS_Store
+fractal-dist
+node_modules
+.npmrc
+.parcel-cache
