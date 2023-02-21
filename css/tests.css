@@ -1,0 +1,46 @@
+/**** Tests ****/
+
+@import 'variables.css';
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import 'fonts.css';
+
+/* Toolkit Validation */
+
+:root {
+  --color-red: oklch(63% 0.29 29);
+  --color-green: oklch(63% 0.24 142);
+}
+
+body {
+  margin-inline: var(--space-base);
+  font-family: 'Source Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+code {
+  color: var(--color-red);
+}
+
+.test-checkmark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1rem;
+    inline-size: 1rem;
+    background-color: var(--color-green);
+    mask: url('data-url:/fa-solid/check.svg') center / contain;
+  }
+}
