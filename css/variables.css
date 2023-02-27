@@ -3,11 +3,17 @@
 
   --color-orange: oklch(58% 0.17 42);
   --color-tan: oklch(97% 0.01 73);
+  --color-gold: oklch(82% 0.16 80);
   --color-blue: oklch(43% 0.1 241);
+  --color-magenta: oklch(52% 0.21 360);
 
   /* Spacing: */
 
   --space-base: 1rem;
   --space-sm: calc(var(--space-base) / 2);
   --space-lg: calc(var(--space-base) * 2);
+
+  /* Misc */
+
+  --border-radius: 0 0 0.3rem 0.3rem;
 }

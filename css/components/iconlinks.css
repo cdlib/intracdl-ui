@@ -1,0 +1,113 @@
+/**** Icon links ****/
+
+.c-iconlinks--cdl,
+.c-iconlinks--ucop {
+  & h2 {
+    margin-block: 0 var(--space-sm);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  & ul {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--space-sm);
+    padding-block-end: var(--space-base);
+    border-radius: var(--border-radius);
+    background-color: white;
+  }
+
+  & li {
+    all: unset;
+  }
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    inline-size: 7rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: '';
+      flex: none;
+      block-size: 3rem; /* icon size */
+      margin-block: var(--space-base);
+      transform: var(--icon-transform);
+      background-color: currentcolor;
+      mask: var(--icon-url) center / contain no-repeat;
+    }
+  }
+}
+
+.c-iconlinks--cdl {
+  & ul {
+    border-top: 3px solid var(--color-gold);
+  }
+
+  & li {
+    &:first-child {
+      --icon-url: url('data-url:/fa-regular/network-wired.svg');
+    }
+
+    &:nth-child(2) {
+      --icon-url: url('data-url:/fa-regular/file-contract.svg');
+    }
+
+    &:nth-child(3) {
+      --icon-url: url('data-url:/fa-regular/file-invoice-dollar.svg');
+    }
+
+    &:nth-child(4) {
+      --icon-url: url('data-url:/fa-regular/pen-to-square.svg');
+    }
+
+    &:nth-child(5) {
+      --icon-url: url('data-url:/images/icon-cdl.svg');
+    }
+
+    &:last-child {
+      --icon-url: url('data-url:/fa-brands/github-alt.svg');
+    }
+  }
+}
+
+.c-iconlinks--ucop {
+  & ul {
+    border-top: 3px solid var(--color-magenta);
+  }
+
+  & li {
+    &:first-child {
+      --icon-url: url('data-url:/fa-solid/tornado.svg');
+      --icon-transform: scaleY(-1);
+    }
+  
+    &:nth-child(2) {
+      --icon-url: url('data-url:/fa-regular/clock-desk.svg');
+    }
+  
+    &:nth-child(3) {
+      --icon-url: url('data-url:/fa-regular/user-headset.svg');
+    }
+  
+    &:nth-child(4) {
+      --icon-url: url('data-url:/fa-solid/graduation-cap.svg');
+    }
+  
+    &:nth-child(5) {
+      --icon-url: url('data-url:/fa-regular/calendar-days.svg');
+    }
+  
+    &:last-child {
+      --icon-url: url('data-url:/fa-regular/memo-pad.svg');
+    }
+  }
+}
