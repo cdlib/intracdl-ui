@@ -70,15 +70,7 @@
       "stylelint-config-property-sort-order-smacss"
     ],
     "rules": {
-      "max-nesting-depth": [
-        2,
-        {
-          "ignore": [
-            "blockless-at-rules",
-            "pseudo-classes"
-          ]
-        }
-      ],
+      "max-nesting-depth": 2,
       "import-notation": null,
       "string-quotes": null
     }
