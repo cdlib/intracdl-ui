@@ -70,14 +70,15 @@
       "stylelint-config-property-sort-order-smacss"
     ],
     "rules": {
+      "import-notation": null,
       "max-nesting-depth": 2,
+      "no-descending-specificity": null,
       "selector-class-pattern": [
         "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?(--([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$",
         {
           "message": "Expected class pattern to be BEM style"
         }
-      ],
-      "import-notation": null
+      ]
     }
   }
 }
