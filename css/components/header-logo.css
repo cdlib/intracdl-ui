@@ -1,0 +1,28 @@
+/**** Header Logo ****/
+
+.c-header-logo {
+  all: unset;
+  display: block;
+  padding-block: var(--space-base);
+  border-block-start: 3px solid var(--color-gold);
+  background-color: black;
+
+  & a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+
+    &::before {
+      content: '';
+      flex: none;
+      block-size: 2.8rem;
+      inline-size: 2.8rem;
+      background-color: currentcolor;
+      mask: url('data-url:/images/icon-cdl.svg') center / contain no-repeat;
+    }
+  }
+}
