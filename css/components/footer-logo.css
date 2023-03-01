@@ -1,0 +1,23 @@
+/**** Footer Logo ****/
+
+.c-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-base);
+  width: min-content;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    flex: none;
+    block-size: 5.5rem;
+    inline-size: 5.5rem;
+    background-color: currentcolor;
+    mask: url('data-url:/images/icon-cdl.svg') center / contain no-repeat;
+  }
+}
