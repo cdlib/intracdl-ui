@@ -1,0 +1,27 @@
+/**** Directory Link ****/
+
+.c-directory-link {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  border-top: 3px solid var(--color-orange);
+  border-radius: var(--border-radius);
+  background-color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1.3rem;
+    inline-size: 1.3rem;
+    background-color: currentcolor;
+    mask: url('data-url:/fa-regular/arrow-down.svg') center / contain no-repeat;
+  }
+}
