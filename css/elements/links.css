@@ -1,0 +1,22 @@
+/* Default link style */
+
+a {
+  color: var(--color-blue);
+}
+
+/* Mailto links */
+
+a[href^='mailto:'] {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1rem;
+    inline-size: 1rem;
+    background-color: currentcolor;
+    mask: url('data-url:/fa-regular/envelope.svg') center / contain no-repeat;
+  }
+}
