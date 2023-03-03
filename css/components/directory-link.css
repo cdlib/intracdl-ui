@@ -6,7 +6,7 @@
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
   border-top: 3px solid var(--color-orange);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-block-end-radius);
   background-color: white;
   font-size: 1.3rem;
   text-decoration: none;
