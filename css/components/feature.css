@@ -1,0 +1,19 @@
+/**** Media Feature ****/
+
+.c-feature {
+  & h2 {
+    margin-block: 0 var(--space-sm);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  & div {
+    display: grid;
+    place-content: center;
+    padding: var(--space-lg) var(--space-base);
+    border-radius: var(--border-radius);
+    background-color: white;
+    aspect-ratio: 16 / 9;
+  }
+}
