@@ -1,0 +1,35 @@
+/**** Footer ****/
+
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: var(--space-base);
+  padding-block: var(--space-lg);
+  border-block-start: 3px solid var(--color-gold);
+  background-color: black;
+
+  & ul {
+    all: unset;
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--space-base);
+  }
+
+  & li {
+    all: unset;
+  }
+
+  & a {
+    color: white;
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
