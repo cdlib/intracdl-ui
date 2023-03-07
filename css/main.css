@@ -14,6 +14,7 @@
 
 /* Components */
 
+@import 'components/breadcrumb.css';
 @import 'components/directory-link.css';
 @import 'components/feature.css';
 @import 'components/footer.css';
