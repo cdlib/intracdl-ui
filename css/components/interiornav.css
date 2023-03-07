@@ -1,0 +1,55 @@
+/**** Interior Navigation Component ****/
+
+.c-interiornav {
+  padding-inline: var(--space-sm);
+  border-block-start: 3px solid var(--color-gold);
+  
+  & h2 {
+    margin-block-start: 0;
+    margin-inline: calc(var(--space-sm) * -1);
+    padding: var(--space-sm);
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  & ul {
+    all: unset;
+    display: block;
+  }
+
+  & ul ul {
+    margin-block-end: 1.6rem;
+    margin-inline-start: 0.8rem;
+  }
+
+  & li {
+    margin-block: 0.8rem;
+    font-size: 1.2rem;
+    list-style: none;
+  }
+
+  & > ul > li {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  & a {
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &[aria-current] {
+      color: black;
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+}
