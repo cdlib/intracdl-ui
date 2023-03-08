@@ -1,1 +1,1 @@
-// Main JS //
+import './banner.js'
