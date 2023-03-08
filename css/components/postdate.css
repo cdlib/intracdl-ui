@@ -1,0 +1,26 @@
+/**** Post Date Component ****/
+
+.c-postdate {
+  & dl {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+  }
+
+  & div { /* term-description groups */
+    display: flex;
+  }
+
+  & dt {
+    font-weight: 600;
+
+    &::after {
+      content: ":\00a0";
+    }
+  }
+
+  & dd {
+    margin: unset;
+  }
+}
