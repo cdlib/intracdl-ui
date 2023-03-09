@@ -10,6 +10,7 @@
 /* Elements */
 
 @import 'elements/body.css';
+@import 'elements/headings.css';
 @import 'elements/links.css';
 
 /* Components */
