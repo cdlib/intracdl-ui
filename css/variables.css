@@ -17,4 +17,8 @@
 
   --border-radius: 0.3rem;
   --border-block-end-radius: 0 0 var(--border-radius) var(--border-radius);
+
+  /* Text */
+
+  --line-height: 1.5;
 }
