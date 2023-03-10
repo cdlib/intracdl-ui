@@ -1,7 +1,9 @@
 /**** Topic Boxes ****/
 
 .c-topicboxes--help,
-.c-topicboxes--general {
+.c-topicboxes--about,
+.c-topicboxes--business,
+.c-topicboxes--employee {
   padding: 0 var(--space-lg) var(--space-base);
   border: 1px solid oklch(95% 0 0);
   background-color: white;
@@ -64,16 +66,21 @@
   & h3 {
     margin-block-end: var(--space-base);
     padding-block: var(--space-base);
-    border-block-end: 3px solid var(--color-orange);
+    border-block-end: 3px solid var(--color-blue);
   }
 }
 
-.c-topicboxes--general {
+.c-topicboxes--about {
+  border-block-start: 3px solid var(--color-gold);
+  border-radius: var(--border-block-end-radius);
+}
+
+.c-topicboxes--business {
   border-block-start: 3px solid var(--color-blue);
   border-radius: var(--border-block-end-radius);
+}
 
-  & h3 {
-    margin-block-end: 0;
-    padding-block-end: 0;
-  }
+.c-topicboxes--employee {
+  border-block-start: 3px solid var(--color-magenta);
+  border-radius: var(--border-block-end-radius);
 }
