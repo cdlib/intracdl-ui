@@ -1,7 +1,7 @@
-/**** Icon links ****/
+/**** Quicklinks Components ****/
 
-.c-iconlinks--cdl,
-.c-iconlinks--ucop {
+.c-quicklinks--cdl,
+.c-quicklinks--ucop {
   & h2 {
     margin-block: 0 var(--space-sm);
     color: white;
@@ -47,7 +47,7 @@
   }
 }
 
-.c-iconlinks--cdl {
+.c-quicklinks--cdl {
   & ul {
     border-top: 3px solid var(--color-gold);
   }
@@ -79,7 +79,7 @@
   }
 }
 
-.c-iconlinks--ucop {
+.c-quicklinks--ucop {
   & ul {
     border-top: 3px solid var(--color-magenta);
   }
