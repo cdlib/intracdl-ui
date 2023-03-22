@@ -31,3 +31,7 @@
 @import 'components/quicklinks.css';
 @import 'components/skipnav.css';
 @import 'components/topicboxes.css';
+
+/* Templates */
+
+@import 'templates/home.css';

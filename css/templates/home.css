@@ -1,0 +1,90 @@
+/**** Home Template ****/
+
+.t-home {
+  --section-inline-padding: clamp(var(--space-lg), 7vw, 5rem);
+  --section-padding: 2rem var(--section-inline-padding);
+
+  & .c-header-logo {
+    padding-inline: var(--section-inline-padding);
+  }
+
+  & .c-banner {
+    padding-inline: clamp(var(--space-lg), 7vw, 10rem);
+  }
+
+  & .c-home-subheading {
+    grid-column: 1 / -1;
+  }
+
+  & .t-top-section {
+    display: grid;
+    gap: var(--space-sm) var(--space-lg);
+    grid-template-columns: 1fr 1fr;
+    container-type: inline-size;
+    padding-block: var(--space-sm) var(--space-lg);
+    padding-inline: var(--section-inline-padding);
+    background: linear-gradient(150deg, var(--color-blue), oklch(43% 0.07 200));
+    box-shadow: inset 0 5px 5px oklch(20% 0 0 / 30%);
+  }
+
+  & .c-qlinks-header {
+    grid-column: 1 / 3;
+    margin-block-start: var(--space-base);
+  }
+
+  & .c-quicklinks--cdl {
+    grid-column: 1 / 3;
+  }
+
+  & .c-quicklinks--ucop {
+    grid-column: 1 / 3;
+  }
+
+  & .c-feature {
+    grid-column: 1 / 3;
+    margin-block-start: var(--space-lg);
+  }
+
+  & .t-help-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--section-padding);
+    background: linear-gradient(150deg, var(--color-orange), oklch(63% 0.15 55));
+    box-shadow: inset 0 5px 5px oklch(20% 0 0 / 15%), inset 0 -5px 5px oklch(20% 0 0 / 15%);
+  }
+
+  & main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-lg);
+    padding: var(--section-padding);
+    background-color: var(--color-tan);
+  }
+
+  & .c-footer {
+    padding-inline: var(--section-inline-padding);
+  }
+}
+
+@container (width > 1500px) {
+  .t-home {
+    & .c-qlinks-header {
+      grid-column: 1;
+    }
+
+    & .c-quicklinks--cdl {
+      grid-column: 1;
+    }
+  
+    & .c-quicklinks--ucop {
+      grid-column: 1;
+    }
+  
+    & .c-feature {
+      grid-column: 2;
+      grid-row: 2 / 5;
+      margin-block-start: 0;
+    }
+  }
+}
