@@ -2,13 +2,6 @@
 
 .c-quicklinks--cdl,
 .c-quicklinks--ucop {
-  & h2 {
-    margin-block: 0 var(--space-sm);
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-
   & ul {
     all: unset;
     display: flex;
