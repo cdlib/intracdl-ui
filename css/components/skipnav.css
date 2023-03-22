@@ -4,8 +4,10 @@
   position: absolute;
   inset-inline-start: -9999px;
   z-index: 1;
+  padding: var(--space-sm);
   transition: opacity 0.5s;
   opacity: 0;
+  background-color: white;
 
   &:focus {
     inset-block-start: var(--space-base);
