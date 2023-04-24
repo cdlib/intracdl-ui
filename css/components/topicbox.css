@@ -8,13 +8,35 @@
   border: 1px solid oklch(95% 0 0);
   background-color: white;
 
-  & h3 {
-    margin-block-start: 0;
+  & header {
+    display: flex;
+    justify-content: space-between;
     margin-inline: calc(var(--space-lg) * -1);
     padding-block-start: var(--space-base);
     padding-inline: var(--space-lg);
+  }
+
+  & h3 {
+    margin-block: unset;
     font-size: 1.5rem;
     font-weight: 500;
+  }
+
+  & header button {
+    all: unset;
+    flex: none;
+    block-size: 1.5rem;
+    inline-size: 1.5rem;
+    background-color: black;
+    mask: url('data-url:/fa-solid/caret-down.svg') center / 1.5rem no-repeat;
+  }
+
+  & header button[aria-expanded='true'] {
+    transform: rotate(-180deg);
+  }
+
+  & header button[hidden] {
+    display: none;
   }
 
   /* Box content formatting: */
@@ -76,7 +98,7 @@
 .c-topicbox--help {
   border-radius: var(--border-radius);
 
-  & h3 {
+  & header {
     margin-block-end: var(--space-base);
     padding-block: var(--space-base);
     border-block-end: 3px solid var(--color-blue);

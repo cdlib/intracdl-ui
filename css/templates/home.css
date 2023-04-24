@@ -3,6 +3,7 @@
 .t-home {
   --section-inline-padding: clamp(var(--space-lg), 7vw, 5rem);
   --section-padding: 2rem var(--section-inline-padding);
+  --home-section-columns: repeat(auto-fill, minmax(320px, 1fr)); /* toggled to this value or 'auto' in topicbox.js */
 
   & .c-header-logo {
     padding-inline: var(--section-inline-padding);
@@ -47,7 +48,7 @@
 
   & .t-help-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: var(--home-section-columns);
     gap: var(--space-lg);
     padding: var(--section-padding);
     background: linear-gradient(150deg, var(--color-orange), oklch(63% 0.15 55));
@@ -56,7 +57,7 @@
 
   & main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: var(--home-section-columns);
     gap: var(--space-lg);
     padding: var(--section-padding);
     background-color: var(--color-tan);
