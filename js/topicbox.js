@@ -2,12 +2,12 @@
 
 const topicBoxes = document.querySelectorAll('.js-topicbox')
 const homeTemplate = document.querySelector('.js-home')
-const homeSectionColumns = window.getComputedStyle(homeTemplate).getPropertyValue('--home-section-columns')
 const topicBoxMediaQuery = window.matchMedia('(width > 50rem)')
 
 for (const topicBox of topicBoxes) {
   const boxButton = topicBox.querySelector('.js-topicbox button')
   const boxContent = topicBox.querySelector('.js-topicbox__content')
+  const homeSectionColumns = window.getComputedStyle(homeTemplate).getPropertyValue('--home-section-columns')
 
   boxButton.addEventListener('click', () => {
     if (boxButton.getAttribute('aria-expanded') === 'false') {
