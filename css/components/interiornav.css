@@ -57,16 +57,8 @@
     list-style: none;
   }
 
-  & > ul > li {
-    color: black;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   & a {
-    font-weight: normal;
     text-decoration: none;
-    text-transform: none;
 
     &:active,
     &:hover {
