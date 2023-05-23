@@ -1,0 +1,55 @@
+/**** Card Components ****/
+
+.c-card--narrow,
+.c-card--wide {
+  display: grid;
+  gap: var(--space-base);
+  padding: var(--space-base);
+  border-inline-start: 4px solid var(--color-gold);
+  border-radius: var(--border-inline-end-radius);
+  background-color: white;
+  box-shadow: 0 3px 5px oklch(0 0 0 / 10%);
+
+  & > a {
+    display: contents;
+  }
+
+  & a:active,
+  & a:hover {
+    & img {
+      outline: 3px solid var(--color-gold);
+      outline-offset: -3px;
+    }
+  }
+
+  & h3 {
+    margin: unset;
+    font-size: 1.3rem;
+  }
+
+  & img {
+    inline-size: 100%;
+  }
+}
+
+.c-card__caption {
+  & p {
+    &:first-child {
+      margin-block-start: unset;
+    }
+
+    &:last-child {
+      margin-block-end: unset;
+    }
+  }
+}
+
+@media (width > 30rem) {
+  & .c-card--wide {
+    grid-template-columns: 50% 1fr;
+  }
+
+  & img {
+    grid-column: 1;
+  }
+}
