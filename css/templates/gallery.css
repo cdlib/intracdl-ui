@@ -1,0 +1,40 @@
+/**** Gallery Templates ****/
+
+.t-gallery-narrow,
+.t-gallery-wide {
+  --min-column-width: '';
+
+  display: grid;
+  gap: var(--space-base);
+  padding-inline: var(--template-margin);
+  background-color: var(--color-tan);
+
+  & .c-header-logo,
+  & .c-footer {
+    margin-inline: calc(var(--template-margin) * -1);
+    padding-inline: var(--template-margin);
+  }
+
+  & main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--min-column-width), 1fr));
+    align-items: start;
+    gap: var(--space-lg);
+  }
+
+  & h2 {
+    grid-column: 1 / -1;
+  }
+}
+
+.t-gallery-narrow {
+  /* For narrow card components */
+
+  --min-column-width: 250px;
+}
+
+.t-gallery-wide {
+  /* For wide card components */
+
+  --min-column-width: 400px;
+}

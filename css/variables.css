@@ -22,4 +22,8 @@
   /* Text */
 
   --line-height: 1.5;
+
+  /* Templates */
+
+  --template-margin: clamp(var(--space-lg), 7vw, 5rem);
 }

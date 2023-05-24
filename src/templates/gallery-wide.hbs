@@ -1,0 +1,14 @@
+<div class="t-gallery-wide">
+  <header>
+    {{ render '@skipnav' }}
+    {{ render '@header-logo' }}
+  </header>
+  {{ render '@breadcrumb' }}
+  <main id="maincontent">
+    <h2>Photo / Video Gallery for Wide Cards</h2>
+    {{#each card}}
+      {{> @card--2 }}
+    {{/each}}
+  </main>
+  {{ render '@footer' }}
+</div>

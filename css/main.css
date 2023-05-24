@@ -35,5 +35,6 @@
 
 /* Templates */
 
+@import 'templates/gallery.css';
 @import 'templates/home.css';
 @import 'templates/interior.css';
