@@ -1,6 +1,6 @@
-/**** Interior Template ****/
+/**** Interior With Nav Template ****/
 
-.t-interior {
+.t-interior-with-nav {
   --template-margin: clamp(var(--space-lg), 7vw, 5rem);
 
   display: grid;
@@ -26,7 +26,7 @@
 }
 
 @media (width > 50rem) {
-  .t-interior {
+  .t-interior-with-nav {
     grid-template-columns: 30% 1fr;
 
     & header {
