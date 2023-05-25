@@ -1,5 +1,6 @@
-/**** Interior With Nav Template ****/
+/**** Interior Templates ****/
 
+.t-interior-no-nav,
 .t-interior-with-nav {
   display: grid;
   gap: var(--space-base) var(--space-lg);
