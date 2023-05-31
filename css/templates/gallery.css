@@ -28,13 +28,25 @@
 }
 
 .t-gallery-narrow {
-  /* For narrow card components */
-
   --min-column-width: 250px;
 }
 
 .t-gallery-wide {
-  /* For wide card components */
-
   --min-column-width: 400px;
+
+  /* Wide card variant */
+
+  @media (width > 30rem) {
+    .c-card {
+      grid-template-columns: 50% 1fr;
+    }
+
+    .c-card h3 {
+      grid-column: 1 / -1;
+    }
+  
+    .c-card img {
+      grid-column: 1;
+    }
+  }
 }

@@ -1,7 +1,6 @@
-/**** Card Components ****/
+/**** Card Component ****/
 
-.c-card--narrow,
-.c-card--wide {
+.c-card {
   display: grid;
   gap: var(--space-base);
   padding: var(--space-base);
@@ -41,15 +40,5 @@
     &:last-child {
       margin-block-end: unset;
     }
-  }
-}
-
-@media (width > 30rem) {
-  & .c-card--wide {
-    grid-template-columns: 50% 1fr;
-  }
-
-  & img {
-    grid-column: 1;
   }
 }
