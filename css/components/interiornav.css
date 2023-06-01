@@ -19,6 +19,10 @@
     font-weight: 400;
   }
 
+  & h2 a {
+    color: currentcolor;
+  }
+
   & header button {
     all: unset;
     flex: none;
