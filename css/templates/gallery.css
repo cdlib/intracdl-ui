@@ -6,6 +6,8 @@
 
   display: grid;
   gap: var(--space-base);
+  grid-template-rows: auto auto 1fr auto;
+  min-block-size: 100vh;
   padding-inline: var(--template-margin);
   background-color: var(--color-tan);
 
@@ -20,6 +22,7 @@
     grid-template-columns: repeat(auto-fill, minmax(var(--min-column-width), 1fr));
     align-items: start;
     gap: var(--space-lg);
+    align-self: start;
   }
 
   & h2 {
