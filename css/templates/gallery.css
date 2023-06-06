@@ -2,7 +2,7 @@
 
 .t-gallery-narrow,
 .t-gallery-wide {
-  --min-column-width: '';
+  --min-column-width: 250px;
 
   display: grid;
   gap: var(--space-base);
@@ -20,7 +20,6 @@
   & main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--min-column-width), 1fr));
-    align-items: start;
     gap: var(--space-lg);
     align-self: start;
   }
@@ -30,16 +29,12 @@
   }
 }
 
-.t-gallery-narrow {
-  --min-column-width: 250px;
-}
-
 .t-gallery-wide {
-  --min-column-width: 400px;
-
   /* Wide card variant */
 
   @media (width > 30rem) {
+    --min-column-width: 400px;
+
     .c-card {
       grid-template-columns: 50% 1fr;
     }
