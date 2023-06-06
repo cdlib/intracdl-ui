@@ -4,7 +4,6 @@
 .t-interior-with-nav {
   display: grid;
   gap: var(--space-base) var(--space-lg);
-  grid-template-rows: auto auto auto 1fr auto;
   min-block-size: 100vh;
   padding-inline: var(--template-margin);
   background-color: var(--color-tan);
@@ -16,17 +15,24 @@
   }
 
   & main {
-    align-self: start;
     padding: var(--space-base);
     background-color: white;
     border-block-start: 3px solid var(--color-blue);
   }
 }
 
+.t-interior-no-nav {
+  grid-template-rows: auto auto 1fr auto auto;
+}
+
+.t-interior-with-nav {
+  grid-template-rows: auto auto auto 1fr auto auto;
+}
+
 @media (width > 50rem) {
   .t-interior-with-nav {
     grid-template-columns: 30% 1fr;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto auto;
 
     & header {
       grid-column: 1 / 3;
