@@ -9,31 +9,35 @@ for (const topicBox of topicBoxes) {
   const boxContent = topicBox.querySelector('.js-topicbox__content')
   const homeSectionColumns = window.getComputedStyle(homeTemplate).getPropertyValue('--home-section-columns')
 
+  const boxOpen = () => {
+    boxButton.setAttribute('aria-expanded', true)
+    boxButton.setAttribute('aria-label', 'close')
+    boxContent.hidden = false
+  }
+
+  const boxClose = () => {
+    boxButton.setAttribute('aria-expanded', false)
+    boxButton.setAttribute('aria-label', 'open')
+    boxContent.hidden = true
+  }
+
   boxButton.addEventListener('click', () => {
     if (boxButton.getAttribute('aria-expanded') === 'false') {
-      boxButton.setAttribute('aria-expanded', true)
-      boxButton.setAttribute('aria-label', 'close')
-      boxContent.hidden = false
+      boxOpen()
     } else {
-      boxButton.setAttribute('aria-expanded', false)
-      boxButton.setAttribute('aria-label', 'open')
-      boxContent.hidden = true
+      boxClose()
     }
   })
 
   const topicBoxToggle = e => {
     if (e.matches) {
       boxButton.hidden = true
-      boxButton.setAttribute('aria-expanded', true)
-      boxButton.setAttribute('aria-label', 'close')
-      boxContent.hidden = false
       homeTemplate.style.setProperty('--home-section-columns', homeSectionColumns)
+      boxOpen()
     } else {
       boxButton.hidden = false
-      boxButton.setAttribute('aria-expanded', false)
-      boxButton.setAttribute('aria-label', 'open')
-      boxContent.hidden = true
       homeTemplate.style.setProperty('--home-section-columns', 'auto') // set grid columns to one column
+      boxClose()
     }
   }
 
