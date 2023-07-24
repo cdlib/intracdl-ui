@@ -1,5 +1,6 @@
 // Topic Box Component Toggle //
 
+import { crossFadeTransition } from './transitions.js'
 const topicBoxes = document.querySelectorAll('.js-topicbox')
 const homeTemplate = document.querySelector('.js-home')
 const topicBoxMediaQuery = window.matchMedia('(width > 50rem)')
@@ -21,13 +22,15 @@ for (const topicBox of topicBoxes) {
     boxContent.hidden = true
   }
 
-  boxButton.addEventListener('click', () => {
+  const buttonToggle = () => {
     if (boxButton.getAttribute('aria-expanded') === 'false') {
       boxOpen()
     } else {
       boxClose()
     }
-  })
+  }
+
+  boxButton.addEventListener('click', () => crossFadeTransition(buttonToggle))
 
   const topicBoxToggle = e => {
     if (e.matches) {
