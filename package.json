@@ -14,7 +14,7 @@
     "watchjs": "onchange -i js/* -- npm run lintjs",
     "lintstyles": "stylelint css/*",
     "lintjs": "standard js/* --verbose | snazzy || exit 0",
-    "update-caniuse-lite": "npx browserslist@latest --update-db"
+    "update-caniuse-lite": "npx update-browserslist-db@latest"
   },
   "repository": {
     "type": "git",
