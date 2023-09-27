@@ -34,6 +34,8 @@ All UI assets, including **main.css**, **main.js**, minified images and font fil
 
 ## Publishing to GitHub Pages
 
-This requires *GitHub Actions* to be selected from the the Build and deployment source within the **Pages** section in the **Settings** menu.
+1. Select *GitHub Actions* from the the Build and deployment source from the **GitHub Pages** section within the **Settings** menu.
+
+2. Add a Font Awesome Pro GitHub Action secret by copying the token applied to the **.npmrc** file (described in the Installation section above) and pasting it as: `FONTAWESOME_TOKEN`. [How to add GitHub Action secrets](https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md).
 
 Pages, components and elements within the Fractal Web interface will be published to your GitHub Pages URL upon each push to the repository.
