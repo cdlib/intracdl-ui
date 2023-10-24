@@ -26,7 +26,7 @@ if (interiorNav) {
     }
   })
 
-  const interiorNavToggle = e => {
+  const navMediaQueryToggle = e => {
     if (e.matches) {
       navButton.hidden = true
       navOpen()
@@ -36,6 +36,6 @@ if (interiorNav) {
     }
   }
 
-  navMediaQuery.addEventListener('change', interiorNavToggle)
-  interiorNavToggle(navMediaQuery)
+  navMediaQuery.addEventListener('change', navMediaQueryToggle)
+  navMediaQueryToggle(navMediaQuery)
 }
