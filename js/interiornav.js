@@ -6,29 +6,33 @@ const navList = document.querySelector('.js-interiornav__list')
 const navMediaQuery = window.matchMedia('(width > 50rem)')
 
 if (interiorNav) {
+  const navOpen = () => {
+    navButton.setAttribute('aria-expanded', true)
+    navButton.setAttribute('aria-label', 'close')
+    navList.hidden = false
+  }
+
+  const navClose = () => {
+    navButton.setAttribute('aria-expanded', false)
+    navButton.setAttribute('aria-label', 'open')
+    navList.hidden = true
+  }
+
   navButton.addEventListener('click', () => {
     if (navButton.getAttribute('aria-expanded') === 'false') {
-      navButton.setAttribute('aria-expanded', true)
-      navButton.setAttribute('aria-label', 'close')
-      navList.hidden = false
+      navOpen()
     } else {
-      navButton.setAttribute('aria-expanded', false)
-      navButton.setAttribute('aria-label', 'open')
-      navList.hidden = true
+      navClose()
     }
   })
 
   const interiorNavToggle = e => {
     if (e.matches) {
       navButton.hidden = true
-      navButton.setAttribute('aria-expanded', true)
-      navButton.setAttribute('aria-label', 'close')
-      navList.hidden = false
+      navOpen()
     } else {
       navButton.hidden = false
-      navButton.setAttribute('aria-expanded', false)
-      navButton.setAttribute('aria-label', 'open')
-      navList.hidden = true
+      navClose()
     }
   }
 
