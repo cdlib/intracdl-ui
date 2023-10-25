@@ -61,6 +61,11 @@
     list-style: none;
   }
 
+  & li:last-child,
+  & li:last-child ul {
+    margin-block-end: unset;
+  }
+
   & a {
     text-decoration: none;
 
