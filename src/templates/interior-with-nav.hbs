@@ -4,7 +4,10 @@
     {{ render '@header-logo' }}
   </header>
   {{ render '@breadcrumb' }}
-  {{ render '@interiornav' }}
+  <aside>
+    {{ render '@interiornav' }}
+    {{ render '@relatedlinks' }}
+  </aside>
   <main id="maincontent">
     {{ render '@content' }}
   </main>
