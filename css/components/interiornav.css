@@ -43,10 +43,6 @@
   & ul {
     all: unset;
     display: block;
-
-    &[hidden] {
-      display: none;
-    }
   }
 
   & ul ul {
