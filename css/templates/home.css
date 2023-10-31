@@ -5,7 +5,8 @@
   --section-padding: 2rem var(--section-inline-padding);
   --home-section-columns: repeat(auto-fill, minmax(320px, 1fr)); /* toggled to this value or 'auto' in topicbox.js */
 
-  & .c-header-logo {
+  & .c-header,
+  & .c-footer {
     padding-inline: var(--section-inline-padding);
   }
 
@@ -61,10 +62,6 @@
     gap: var(--space-lg);
     padding: var(--section-padding);
     background-color: var(--color-tan);
-  }
-
-  & .c-footer {
-    padding-inline: var(--section-inline-padding);
   }
 }
 
