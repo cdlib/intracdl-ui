@@ -11,7 +11,7 @@
   background-color: white;
   container-type: inline-size;
 
-  & h2 {
+  & h1 {
     margin: unset;
     font-size: 1.3rem;
     font-weight: 600;
@@ -74,7 +74,7 @@
 
 @container (min-width: 600px) {
   .c-feature {
-    & h2 {
+    & h1 {
       grid-column: 2;
     }
 

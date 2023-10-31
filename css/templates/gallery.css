@@ -24,7 +24,7 @@
     align-items: start;
   }
 
-  & h2 {
+  & h1 {
     grid-column: 1 / -1;
   }
 }
