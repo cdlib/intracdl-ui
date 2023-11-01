@@ -8,7 +8,7 @@
   padding-inline: var(--template-margin);
   background-color: var(--color-tan);
 
-  & .c-header-logo,
+  & .c-header,
   & .c-footer {
     margin-inline: calc(var(--template-margin) * -1);
     padding-inline: var(--template-margin);

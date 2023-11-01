@@ -1,11 +1,11 @@
 <div class="t-gallery-wide">
   <header>
     {{ render '@skipnav' }}
-    {{ render '@header-logo' }}
+    {{ render '@header' }}
   </header>
   {{ render '@breadcrumb' }}
   <main id="maincontent">
-    <h2>Photo / Video Gallery for Wide Cards</h2>
+    <h1>Photo / Video Gallery for Wide Cards</h1>
     {{#each card}}
       {{> @card }}
     {{/each}}

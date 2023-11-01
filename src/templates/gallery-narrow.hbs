@@ -1,11 +1,11 @@
 <div class="t-gallery-narrow">
   <header>
     {{ render '@skipnav' }}
-    {{ render '@header-logo' }}
+    {{ render '@header' }}
   </header>
   {{ render '@breadcrumb' }}
   <main id="maincontent">
-    <h2>Photo / Video Gallery for Narrow Cards</h2>
+    <h1>Photo / Video Gallery for Narrow Cards</h1>
     {{#each card}}
       {{> @card }}
     {{/each}}
