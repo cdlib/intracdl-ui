@@ -1,0 +1,46 @@
+/**** Downloads Component ****/
+
+.c-downloads {
+  margin-block: var(--space-base);
+  padding-block: var(--space-base);
+  border-block: 2px solid var(--color-blue);
+
+  & header h2 {
+    margin-block: 0 var(--space-base);
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  
+  & ul {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--space-base);
+  }
+
+  & li {
+    all: unset;
+  }
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    inline-size: 7rem;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: '';
+      flex: none;
+      block-size: 3rem; /* icon size */
+      margin-block: var(--space-base);
+      background-color: currentcolor;
+      mask: url('data-url:/fa-regular/file-arrow-down.svg') center / contain no-repeat;
+    }
+  }
+}
