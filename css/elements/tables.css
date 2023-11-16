@@ -1,5 +1,15 @@
-table {
+figure.wp-block-table { /* #1 */
+  margin-inline: unset;
+  overflow: unset;
+}
+
+figure.wp-block-table table {
   border-collapse: collapse;
+
+  & :is(thead, th, td) { /* #1 */
+    padding: unset;
+    border: unset;
+  }
 
   & th {
     font-weight: 700;
@@ -11,7 +21,7 @@ table {
     vertical-align: bottom;
   }
 
-  & tbody th { /* #1 */
+  & tbody th { /* #2 */
     padding: var(--space-base);
     color: var(--color-blue);
     vertical-align: top;
@@ -26,18 +36,14 @@ table {
     vertical-align: top;
   }
 
-  + figcaption { /* #2 */
+  + figcaption { /* #3 */
     padding: var(--space-base) var(--space-base) 0;
     font-size: 0.9rem;
   }
 }
 
-figure:has(table) { /* #3 */
-  margin-inline: unset;
-}
+/* #1: Unset WordPress table block styles */
 
-/* #1: The WordPress table editor doesn't appear to be able to create header cells in a table body, but we style for them just in case. */
+/* #2: The WordPress table editor doesn't appear to be able to create header cells in a table body, but we style for them just in case. */
 
-/* #2: If a table caption is added via the WordPress table editor, it adds it as a figcaption element sibling to the table element. */
-
-/* #3: The WordPress table editor wraps tables in figure elements; only style the figure element in this situation. */
+/* #3: If a table caption is added via the WordPress table editor, it adds it as a figcaption element sibling to the table element. */
