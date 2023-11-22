@@ -1,45 +1,8 @@
 /* Variables */
 
 @import 'variables.css';
-
-/* Normalize Styles and Fonts */
-
 @import '../node_modules/modern-normalize/modern-normalize.css';
 @import 'fonts.css';
-
-/* Elements */
-
-@import 'elements/body.css';
-@import 'elements/headings.css';
-@import 'elements/links.css';
-@import 'elements/lists.css';
-@import 'elements/paragraphs.css';
-@import 'elements/tables.css';
-
-/* Components */
-
-@import 'components/banner.css';
-@import 'components/breadcrumb.css';
-@import 'components/directory-link.css';
-@import 'components/callout.css';
-@import 'components/card.css';
-@import 'components/downloads.css';
-@import 'components/feature.css';
-@import 'components/footer.css';
-@import 'components/footer-logo.css';
-@import 'components/header.css';
-@import 'components/header-logo.css';
-@import 'components/home-subheading.css';
-@import 'components/interiornav.css';
-@import 'components/postdate.css';
-@import 'components/qlinks-header.css';
-@import 'components/quicklinks.css';
-@import 'components/relatedlinks.css';
-@import 'components/skipnav.css';
-@import 'components/topicbox.css';
-
-/* Templates */
-
-@import 'templates/gallery.css';
-@import 'templates/home.css';
-@import 'templates/interior.css';
+@import './elements/*.css';
+@import './components/*.css';
+@import './templates/*.css';
