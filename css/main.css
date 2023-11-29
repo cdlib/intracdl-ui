@@ -1,8 +1,10 @@
-/* Variables */
+@layer wp-styles, normalize, elements, components, templates;
+
+/* wp-styles cascade layer for all WordPress stylesheets and styles is set in the theme's functions.php */
 
 @import 'variables.css';
-@import '../node_modules/modern-normalize/modern-normalize.css';
 @import 'fonts.css';
-@import './elements/*.css';
-@import './components/*.css';
-@import './templates/*.css';
+@import '../node_modules/modern-normalize/modern-normalize.css' layer(normalize);
+@import-glob './elements/*.css' layer(elements);
+@import-glob './components/*.css' layer(components);
+@import-glob './templates/*.css' layer(templates);
