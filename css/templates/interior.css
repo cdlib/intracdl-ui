@@ -1,7 +1,8 @@
 /**** Interior Templates ****/
 
 .t-interior-no-nav,
-.t-interior-with-nav {
+.t-interior-with-nav,
+.t-interior-related-links {
   display: grid;
   gap: var(--space-base) var(--space-lg);
   min-block-size: 100vh;
@@ -32,12 +33,14 @@
   grid-template-rows: auto auto 1fr auto auto;
 }
 
-.t-interior-with-nav {
+.t-interior-with-nav,
+.t-interior-related-links {
   grid-template-rows: auto auto auto 1fr auto auto;
 }
 
 @media (width > 50rem) {
-  .t-interior-with-nav {
+  .t-interior-with-nav,
+  .t-interior-related-links {
     grid-template-columns: 30% 1fr;
     grid-template-rows: auto auto 1fr auto auto;
 
