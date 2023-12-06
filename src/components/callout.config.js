@@ -4,7 +4,7 @@ module.exports = {
   label: 'Callout',
   context: {
     callout: {
-      content: faker.lorem.paragraphs(3, '</p><p>\n')
+      content: faker.lorem.paragraphs(3, '</p>\n<p>')
     }
   }
 }

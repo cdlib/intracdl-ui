@@ -18,7 +18,7 @@ module.exports = {
       paragraph2: faker.lorem.paragraphs(1),
       paragraph3: faker.lorem.paragraphs(1),
       paragraph4: faker.lorem.paragraphs(1),
-      paragraph5: faker.lorem.paragraphs(2, '</p>\n'),
+      paragraph5: faker.lorem.paragraphs(2, '</p>\n<p>'),
       words1: faker.lorem.sentence(),
       words2: faker.lorem.sentence(),
       words3: faker.lorem.sentence(),
