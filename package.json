@@ -10,9 +10,9 @@
     "fractal-build": "fractal build",
     "parcel-dev": "parcel watch css/tests.css css/main.css js/tests.js js/main.js images/* --dist-dir dist --public-url . --no-cache",
     "parcel-build": "parcel build css/tests.css css/main.css js/tests.js js/main.js images/* --dist-dir dist --public-url . --no-cache --no-source-maps",
-    "watchstyles": "onchange -i css/* -- npm run lintstyles",
+    "watchstyles": "onchange -i 'css/**/*.css' -- npm run lintstyles",
     "watchjs": "onchange -i js/* -- npm run lintjs",
-    "lintstyles": "stylelint css/*",
+    "lintstyles": "stylelint 'css/**/*.css' '!css/main.css'",
     "lintjs": "standard js/* --verbose | snazzy || exit 0",
     "update-caniuse-lite": "npx update-browserslist-db@latest"
   },
@@ -44,7 +44,7 @@
     "snazzy": "^9.0.0",
     "source-sans": "^3.46.0",
     "standard": "^17.0.0",
-    "stylelint": "^15.2.0",
+    "stylelint": "^15.11.0",
     "stylelint-config-property-sort-order-smacss": "^9.1.0",
     "stylelint-config-standard": "^30.0.1"
   },
