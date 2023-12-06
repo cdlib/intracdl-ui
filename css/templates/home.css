@@ -25,8 +25,8 @@
     container-type: inline-size;
     padding-block: var(--space-sm) var(--space-lg);
     padding-inline: var(--section-inline-padding);
-    background: linear-gradient(150deg, var(--color-blue), oklch(43% 0.07 200));
-    box-shadow: inset 0 5px 5px oklch(20% 0 0 / 30%);
+    background: linear-gradient(150deg, var(--color-blue), oklch(43% 0.07 200deg));
+    box-shadow: inset 0 5px 5px oklch(20% 0 0deg / 30%);
   }
 
   & .c-qlinks-header {
@@ -52,8 +52,8 @@
     grid-template-columns: var(--home-section-columns);
     gap: var(--space-lg);
     padding: var(--section-padding);
-    background: linear-gradient(150deg, var(--color-orange), oklch(63% 0.15 55));
-    box-shadow: inset 0 5px 5px oklch(20% 0 0 / 15%), inset 0 -5px 5px oklch(20% 0 0 / 15%);
+    background: linear-gradient(150deg, var(--color-orange), oklch(63% 0.15 55deg));
+    box-shadow: inset 0 5px 5px oklch(20% 0 0deg / 15%), inset 0 -5px 5px oklch(20% 0 0deg / 15%);
   }
 
   & main {

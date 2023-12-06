@@ -5,7 +5,7 @@
 .c-topicbox--business,
 .c-topicbox--employee {
   padding: 0 var(--space-lg) var(--space-base);
-  border: 1px solid oklch(95% 0 0);
+  border: 1px solid oklch(95% 0 0deg);
   background-color: white;
 
   & header {
@@ -86,7 +86,7 @@
   & strong a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: oklch(98% 0.01 241);
+    background-color: oklch(98% 0.01 241deg);
     font-weight: normal;
   }
 

@@ -7,8 +7,8 @@
 /* Toolkit Validation */
 
 :root {
-  --color-red: oklch(63% 0.29 29);
-  --color-green: oklch(63% 0.24 142);
+  --color-red: oklch(63% 0.29 29deg);
+  --color-green: oklch(63% 0.24 142deg);
 }
 
 body {
