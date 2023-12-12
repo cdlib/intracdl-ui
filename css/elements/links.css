@@ -20,3 +20,22 @@ a[href^='mailto:'] {
     mask: url('data-url:/fa-regular/envelope.svg') center / contain no-repeat;
   }
 }
+
+/* Bold links */
+
+strong a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  &::after {
+    content: '';
+    flex: none;
+    block-size: 1.2rem;
+    inline-size: 1.2rem;
+    background-color: currentcolor;
+    mask: url('data-url:/fa-solid/circle-arrow-right.svg') center / contain no-repeat;
+  }
+}
