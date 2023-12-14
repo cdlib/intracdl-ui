@@ -1,0 +1,15 @@
+/**** Process Component ****/
+
+.c-process {
+  counter-reset: section;
+
+  & h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    &::before {
+      content: '' counter(section) '. ';
+      counter-increment: section;
+    }
+  }
+}
