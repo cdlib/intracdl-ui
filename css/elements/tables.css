@@ -32,7 +32,7 @@ figure.wp-block-table table {
   }
 
   & td {
-    padding: var(--space-base) var(--space-base) var(--space-sm);
+    padding: 1.5rem var(--space-base);
     vertical-align: top;
   }
 
