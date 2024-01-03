@@ -15,7 +15,6 @@
     all: unset;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: var(--space-base);
   }
 
@@ -25,9 +24,8 @@
 
   & a {
     display: flex;
-    flex-direction: column;
-    inline-size: 7rem;
-    text-align: center;
+    align-items: center;
+    gap: 0.3rem;
     text-decoration: none;
 
     &:hover {
@@ -37,8 +35,8 @@
     &::before {
       content: '';
       flex: none;
-      block-size: 3rem; /* icon size */
-      margin-block: var(--space-base);
+      block-size: 1.2rem;
+      inline-size: 1.2rem;
       background-color: currentcolor;
       mask: url('data-url:/fa-regular/file-arrow-down.svg') center / contain no-repeat;
     }
