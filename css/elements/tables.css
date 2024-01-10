@@ -22,8 +22,7 @@ figure.wp-block-table table {
   }
 
   & tbody th { /* #2 */
-    padding: var(--space-base);
-    color: var(--color-blue);
+    padding: 1.5rem var(--space-base);
     vertical-align: top;
   }
 
