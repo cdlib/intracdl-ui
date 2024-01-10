@@ -12,6 +12,9 @@ module.exports = {
     },
     link2: {
       text: faker.lorem.words(5)
+    },
+    link3: {
+      text: faker.lorem.words(5)
     }
   }
 }

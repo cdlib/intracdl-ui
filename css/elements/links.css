@@ -21,9 +21,10 @@ a[href^='mailto:'] {
   }
 }
 
-/* Bold links */
+/* Bold and download links */
 
-p > strong:only-child > a:only-child {
+p > strong:only-child > a:only-child,
+p > em:only-child > a:only-child {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -36,6 +37,17 @@ p > strong:only-child > a:only-child {
     block-size: 1.2rem;
     inline-size: 1.2rem;
     background-color: currentcolor;
-    mask: url('data-url:/fa-solid/circle-arrow-right.svg') center / contain no-repeat;
+  }
+}
+
+p > strong:only-child > a:only-child::after {
+  mask: url('data-url:/fa-solid/circle-arrow-right.svg') center / contain no-repeat;
+}
+
+p > em:only-child > a:only-child {
+  font-style: normal;
+
+  &::after {
+    mask: url('data-url:/fa-solid/circle-arrow-down.svg') center / contain no-repeat;
   }
 }
