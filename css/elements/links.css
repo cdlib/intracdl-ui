@@ -23,7 +23,7 @@ a[href^='mailto:'] {
 
 /* Bold links */
 
-strong a {
+p > strong:only-child > a:only-child {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
