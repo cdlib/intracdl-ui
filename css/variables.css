@@ -4,6 +4,7 @@
   --color-orange: oklch(from darkorange l c h);
   --color-tan: oklch(from floralwhite calc(l - 2%) c h);
   --color-gold: oklch(from orange l c calc(h + 10));
+  --color-teal: oklch(from lightseagreen l c h);
   --color-blue: oklch(from steelblue calc(l - 16%) c h);
   --color-magenta: oklch(from mediumvioletred l c calc(h + 10));
 
