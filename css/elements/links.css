@@ -21,15 +21,18 @@ a[href^='mailto:'] {
   }
 }
 
-/* Bold and download links */
+/* Highlight and Download links (only styled if <p>, <strong>, <em> and <a> tags are nested in a particular order via Wordpress editor) */
 
 p > strong:only-child > a:only-child,
-p > em:only-child > a:only-child {
+p > a:only-child > strong:only-child,
+p > em:only-child > a:only-child,
+p > a:only-child > em:only-child {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   font-size: 1.2rem;
   font-weight: 700;
+  text-decoration: underline;
 
   &::after {
     content: '';
@@ -40,11 +43,17 @@ p > em:only-child > a:only-child {
   }
 }
 
-p > strong:only-child > a:only-child::after {
+/* Highlight link style using right arrow: */
+
+p > strong:only-child > a:only-child::after,
+p > a:only-child > strong:only-child::after {
   mask: url('data-url:/fa-solid/circle-arrow-right.svg') center / contain no-repeat;
 }
 
-p > em:only-child > a:only-child {
+/* Download link style using down arrow: */
+
+p > em:only-child > a:only-child,
+p > a:only-child > em:only-child {
   font-style: normal;
 
   &::after {
