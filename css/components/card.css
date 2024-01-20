@@ -10,14 +10,14 @@
   box-shadow: 0 3px 5px oklch(0 0 0deg / 10%);
 
   & > a {
-    display: contents;
-  }
+    display: grid;
+    grid-row: 1 / 3;
+    grid-template-rows: subgrid;
+    text-decoration: none;
 
-  & a:active,
-  & a:hover {
-    & img {
-      outline: 3px solid var(--color-gold);
-      outline-offset: -3px;
+    &:focus,
+    &:hover {
+      text-decoration: underline;
     }
   }
 
