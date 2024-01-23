@@ -18,6 +18,9 @@
     display: grid;
     grid-row: 1 / 3;
     grid-template-rows: subgrid;
+  }
+
+  a {
     text-decoration: none;
 
     &:focus,
@@ -46,4 +49,8 @@
       margin-block-end: unset;
     }
   }
+}
+
+.c-card__more-link {
+  text-align: end;
 }

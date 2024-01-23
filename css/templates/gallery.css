@@ -37,10 +37,12 @@
 
     .c-card {
       grid-template-columns: 50% 1fr;
+      grid-template-rows: auto 1fr auto;
     }
 
     .c-card > a {
       grid-column: 1 / 3;
+      grid-row: 1 / 4;
       grid-template-columns: subgrid;
     }
 
@@ -48,9 +50,18 @@
       grid-column: 1 / 3;
     }
 
+    .c-card__image {
+      grid-row: 2 / 4;
+    }
+
     .c-card__caption {
       grid-column: 2;
       grid-row: 2;
+    }
+
+    .c-card__more-link {
+      grid-column: 2;
+      grid-row: 3;
     }
   }
 }
