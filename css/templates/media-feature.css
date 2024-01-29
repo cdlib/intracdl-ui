@@ -1,0 +1,20 @@
+/**** Media Feature Template ****/
+
+.t-media-feature {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: var(--space-base) var(--space-lg);
+  min-block-size: 100vh;
+  padding-inline: var(--template-margin);
+  background-color: var(--color-tan);
+
+  & .c-header,
+  & .c-footer {
+    margin-inline: calc(var(--template-margin) * -1);
+    padding-inline: var(--template-margin);
+  }
+
+  & main {
+    font-size: 1.2rem;
+  }
+}
