@@ -2,7 +2,7 @@
 
 .c-downloads {
   margin-block: var(--space-base);
-  padding-block: var(--space-base);
+  padding-block: var(--space-base) 1.5rem;
   border-block: 2px solid var(--color-blue);
 
   & header h2 {
@@ -15,7 +15,7 @@
     all: unset;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-base);
+    gap: 1.25rem 1.75rem;
   }
 
   & li {
