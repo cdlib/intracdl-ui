@@ -6,7 +6,7 @@ for (var i = 0; i < 15; i++) {
     card: {
       title: faker.commerce.productName(),
       image: faker.image.nature(225, 125, true),
-      caption: faker.lorem.sentence(),
+      caption: faker.lorem.sentences(2),
     }
   })
 }
