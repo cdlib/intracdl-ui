@@ -39,7 +39,7 @@
       grid-template-rows: auto 1fr auto;
     }
 
-    .c-card > a {
+    .c-card__figure {
       grid-column: 1 / 3;
       grid-row: 1 / 4;
       grid-template-columns: subgrid;
@@ -58,7 +58,7 @@
       grid-row: 2;
     }
 
-    .c-card__more-link {
+    .c-card__link-2 {
       grid-column: 2;
       grid-row: 3;
     }

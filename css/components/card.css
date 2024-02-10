@@ -9,12 +9,6 @@
   background-color: white;
   box-shadow: 0 3px 5px oklch(0 0 0deg / 10%);
 
-  & > a {
-    display: grid;
-    grid-row: 1 / 3;
-    grid-template-rows: subgrid;
-  }
-
   a {
     text-decoration: none;
 
@@ -32,6 +26,12 @@
   & img {
     inline-size: 100%;
   }
+}
+
+.c-card__figure {
+  display: grid;
+  grid-row: 1 / 3;
+  grid-template-rows: subgrid;
 }
 
 .c-card__caption {

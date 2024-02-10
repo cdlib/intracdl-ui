@@ -1,14 +1,19 @@
 <section class="c-card">
-  <a href="">
+  <a class="c-card__figure" href="">
     <h2>{{ card.title }}</h2>
     <div class="c-card__image">
       <img src="{{ card.image }}" alt="Nature scene">
     </div>
+    {{#unless card.caption}}
+    <div class="c-card__link-1">
+      {{ card.link1 }}
+    </div>
+    {{/unless}}
   </a>
+  {{#unless card.link1}}
   <div class="c-card__caption">
     <p>{{ card.caption }}</p>
   </div>
-  <div class="c-card__more-link">
-    <a href="">Meeting Notes</a>
-  </div>
+  {{/unless}}
+  <a class="c-card__link-2" href="">{{ card.link2 }}</a>
 </section>
