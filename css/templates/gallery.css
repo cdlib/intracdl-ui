@@ -28,6 +28,10 @@
   }
 }
 
+.c-card__image {
+  align-self: center;
+}
+
 .t-gallery-wide {
   /* Wide card variant */
 
@@ -51,6 +55,7 @@
 
     .c-card__image {
       grid-row: 2 / 4;
+      align-self: start;
     }
 
     .c-card__caption {
