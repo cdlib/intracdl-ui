@@ -17,6 +17,9 @@ for (const logo of logos) {
 module.exports = {
   label: 'Gallery Narrow Logos',
   context: {
+    gallery_narrow: {
+      intro_paragraph: faker.lorem.paragraph()
+    },
     logo: cardData
   }
 }

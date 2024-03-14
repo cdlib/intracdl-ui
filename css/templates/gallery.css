@@ -23,8 +23,12 @@
     gap: var(--space-lg);
   }
 
-  & h1 {
+  & :where(h1, h2, h3, h4, h5, h6, p) {
     grid-column: 1 / -1;
+
+    & + :where(h2, h3, h4, h5, h6, p) {
+      margin: 0;
+    }
   }
 }
 

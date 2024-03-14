@@ -5,7 +5,8 @@
   </header>
   {{ render '@breadcrumb' }}
   <main id="maincontent">
-    <h1>CDL Logos</h1>
+    <h1>CDL Program and Service Logos</h1>
+    <p>{{ gallery_narrow.intro_paragraph }}</p>
     {{#each logo}}
       {{> @card--2 }}
     {{/each}}
