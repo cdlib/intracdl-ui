@@ -3,6 +3,7 @@
 /* This is implemented in the Wordpress editor by applying the class 'c-instruction' to any Wordpress heading block. Applying this class to other Wordpress blocks won't work. */
 
 :where(h2, h3, h4, h5, h6).c-instruction {
+  margin-block-start: var(--space-lg);
   font-size: 1.3rem;
   font-weight: 700;
 }
