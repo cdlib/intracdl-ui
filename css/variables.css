@@ -26,5 +26,5 @@
 
   /* Templates */
 
-  --template-margin: clamp(var(--space-lg), 8vw, 25rem);
+  --template-margin: clamp(var(--space-base), 11vw - 2rem, 25rem);
 }
