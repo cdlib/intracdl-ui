@@ -1,8 +1,0 @@
-/**** Callout Component ****/
-
-.c-callout {
-  display: inline-block;
-  margin: unset;
-  padding: var(--space-sm) var(--space-lg);
-  background-color: oklch(from aliceblue l calc(c - 0.005) h);
-}
