@@ -7,7 +7,8 @@ function titleCase(str) {
 }
 
 module.exports = {
-  label: 'Sample Content',
+  label: 'Content',
+  hidden: true,
   context: {
     content: {
       heading1: titleCase(faker.lorem.words(5)),
