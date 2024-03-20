@@ -1,0 +1,5 @@
+blockquote {
+  margin: var(--space-lg) var(--space-base);
+  padding: var(--space-sm) 3rem;
+  background-color: oklch(from #e3e9f0 l c h);
+}
