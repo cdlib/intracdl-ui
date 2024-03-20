@@ -49,6 +49,7 @@
 
 .c-details__content {
   grid-column: 2;
+  margin-block-end: 1rem;
 }
 
 /* 1: The <details> element does not work as a grid container, so display only its contents. */
