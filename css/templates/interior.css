@@ -57,7 +57,7 @@
     }
 
     & main {
-      padding: var(--space-base) var(--space-lg);
+      padding-inline: clamp(var(--space-base), 5vw - 1rem, 3rem);
     }
 
     & .c-postdate {
