@@ -65,6 +65,17 @@
   }
 }
 
+.t-help-section section[class^='c-topicbox'] { /* (1) */
+  border-radius: var(--border-radius);
+  border-block-start: unset;
+
+  & header {
+    margin-block-end: var(--space-base);
+    padding-block: var(--space-base);
+    border-block-end: 3px solid var(--topicbox-border-color);
+  }
+}
+
 @container (width > 1500px) {
   .t-home {
     & .c-qlinks-header {
@@ -86,3 +97,5 @@
     }
   }
 }
+
+/* (1) Restyle all topicbox versions in the template help section by replacing the topicbox top border with a border under the topicbox header. */

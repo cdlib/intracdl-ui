@@ -1,11 +1,12 @@
 /**** Topic Boxes ****/
 
-.c-topicbox--help,
-.c-topicbox--about,
-.c-topicbox--business,
-.c-topicbox--employee {
+.c-topicbox--color1,
+.c-topicbox--color2,
+.c-topicbox--color3 {
   padding: 0 var(--space-lg) var(--space-base);
   border: 1px solid oklch(95% 0 0deg);
+  border-radius: var(--border-block-end-radius);
+  border-block-start: 3px solid var(--topicbox-border-color);
   background-color: white;
 
   & header {
@@ -95,27 +96,14 @@
   }
 }
 
-.c-topicbox--help {
-  border-radius: var(--border-radius);
-
-  & header {
-    margin-block-end: var(--space-base);
-    padding-block: var(--space-base);
-    border-block-end: 3px solid var(--color-blue);
-  }
+.c-topicbox--color1 {
+  --topicbox-border-color: var(--color-blue);
 }
 
-.c-topicbox--about {
-  border-block-start: 3px solid var(--color-gold);
-  border-radius: var(--border-block-end-radius);
+.c-topicbox--color2 {
+  --topicbox-border-color: var(--color-gold);
 }
 
-.c-topicbox--business {
-  border-block-start: 3px solid var(--color-blue);
-  border-radius: var(--border-block-end-radius);
-}
-
-.c-topicbox--employee {
-  border-block-start: 3px solid var(--color-magenta);
-  border-radius: var(--border-block-end-radius);
+.c-topicbox--color3 {
+  --topicbox-border-color: var(--color-magenta);
 }
