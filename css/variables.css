@@ -26,5 +26,5 @@
 
   /* Templates */
 
-  --template-margin: clamp(var(--space-base), 11vw - 2rem, 25rem);
+  --template-max-main-width: 52rem;
 }
