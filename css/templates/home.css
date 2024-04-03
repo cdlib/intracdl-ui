@@ -6,8 +6,10 @@
   --home-section-columns: repeat(auto-fill, minmax(320px, 1fr)); /* toggled to this value or 'auto' in topicbox.js */
 
   & .c-header,
-  & .c-footer {
+  & > footer {
     padding-inline: var(--section-inline-padding);
+    border-block-start: 4px solid var(--color-gold);
+    background-color: black;
   }
 
   & .c-banner {

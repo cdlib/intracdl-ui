@@ -2,6 +2,4 @@
 
 .c-header {
   padding-block: var(--space-base);
-  border-block-start: 4px solid var(--color-gold);
-  background-color: black;
 }

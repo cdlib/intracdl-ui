@@ -7,8 +7,6 @@
   justify-content: space-evenly;
   gap: var(--space-base);
   padding-block: var(--space-lg);
-  border-block-start: 4px solid var(--color-gold);
-  background-color: black;
 
   & ul {
     all: unset;
