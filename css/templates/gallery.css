@@ -22,6 +22,10 @@
     background-color: black;
   }
 
+  & > footer {
+    margin-block-start: 3rem;
+  }
+
   & main {
     display: grid;
     grid-column: 2;

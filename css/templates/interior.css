@@ -20,6 +20,10 @@
     background-color: black;
   }
 
+  & > footer {
+    margin-block-start: 3rem;
+  }
+
   & main {
     grid-column: 2;
     padding-block: var(--space-base);

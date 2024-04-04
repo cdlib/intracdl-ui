@@ -18,6 +18,10 @@
     background-color: black;
   }
 
+  & > footer {
+    margin-block-start: 3rem;
+  }
+
   & main {
     grid-column: 2;
     font-size: 1.2rem;
