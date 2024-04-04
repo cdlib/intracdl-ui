@@ -8,6 +8,7 @@
   grid-template-columns: 1fr minmax(auto, 85rem) 1fr;
   grid-template-rows: auto auto 1fr auto;
   row-gap: var(--space-base);
+  align-items: start;
   min-block-size: 100vh;
   background-color: var(--color-tan);
 
