@@ -1,5 +1,6 @@
 li {
-  line-height: var(--line-height);
+  margin-block: 1rem;
+  line-height: 1.25;
 }
 
 ol ol {
