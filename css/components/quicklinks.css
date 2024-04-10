@@ -100,7 +100,7 @@
     }
   
     &:last-child {
-      --icon-url: url('data-url:/fa-regular/memo-pad.svg');
+      --icon-url: url('data-url:/images/logo-link.svg');
     }
   }
 }
