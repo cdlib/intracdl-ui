@@ -46,11 +46,11 @@
 
   & li {
     &:first-child {
-      --icon-url: url('data-url:/fa-regular/network-wired.svg');
+      --icon-url: url('data-url:/fa-solid/sitemap.svg');
     }
 
     &:nth-child(2) {
-      --icon-url: url('data-url:/fa-regular/file-contract.svg');
+      --icon-url: url('data-url:/images/icon-travel-form.svg');
     }
 
     &:nth-child(3) {
@@ -58,7 +58,7 @@
     }
 
     &:nth-child(4) {
-      --icon-url: url('data-url:/fa-regular/pen-to-square.svg');
+      --icon-url: url('data-url:/fa-solid/pen-to-square.svg');
     }
 
     &:nth-child(5) {
@@ -76,16 +76,15 @@
 
   & li {
     &:first-child {
-      --icon-url: url('data-url:/fa-solid/tornado.svg');
-      --icon-transform: scaleY(-1);
+      --icon-url: url('data-url:/fa-solid/person-hiking.svg');
     }
   
     &:nth-child(2) {
-      --icon-url: url('data-url:/fa-regular/clock-desk.svg');
+      --icon-url: url('data-url:/fa-solid/business-time.svg');
     }
   
     &:nth-child(3) {
-      --icon-url: url('data-url:/fa-regular/user-headset.svg');
+      --icon-url: url('data-url:/fa-solid/user-headset.svg');
     }
   
     &:nth-child(4) {
@@ -93,7 +92,7 @@
     }
   
     &:nth-child(5) {
-      --icon-url: url('data-url:/fa-regular/calendar-days.svg');
+      --icon-url: url('data-url:/images/logo-outlook.svg');
     }
   
     &:last-child {
