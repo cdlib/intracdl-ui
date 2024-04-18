@@ -9,6 +9,7 @@
     justify-content: space-evenly;
     gap: var(--space-sm);
     padding-block-end: var(--space-base);
+    border-block-start: 3px solid var(--top-border);
     border-radius: var(--border-block-end-radius);
     background-color: white;
   }
@@ -41,9 +42,7 @@
 }
 
 .c-quicklinks--cdl {
-  & ul {
-    border-top: 3px solid var(--color-gold);
-  }
+  --top-border: var(--color-gold);
 
   & li {
     &:first-child {
@@ -73,9 +72,7 @@
 }
 
 .c-quicklinks--ucop {
-  & ul {
-    border-top: 3px solid var(--color-magenta);
-  }
+  --top-border: var(--color-magenta);
 
   & li {
     &:first-child {
