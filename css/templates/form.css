@@ -59,4 +59,16 @@
 .t-form input[type='submit'] {
   justify-self: start;
   margin-block: 2rem 1.5rem;
+  padding: 0.7rem 1.8rem;
+  border-style: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-blue);
+  box-shadow: 3px 3px 3px oklch(0 0 0deg / 10%);
+  color: white;
+
+  &:active,
+  &:hover {
+    background-color: oklch(from #00476d l c h);
+    text-decoration: underline;
+  }
 }
