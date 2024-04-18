@@ -32,11 +32,11 @@
     &::before {
       content: '';
       flex: none;
-      block-size: 3rem; /* icon size */
+      block-size: 3rem; /* icon container size */
       margin-block: var(--space-base);
       transform: var(--icon-transform);
       background-color: currentcolor;
-      mask: var(--icon-url) center / contain no-repeat;
+      mask: var(--icon-url) center / var(--icon-custom-size, contain) no-repeat;
     }
   }
 }
@@ -98,6 +98,7 @@
   
     &:last-child {
       --icon-url: url('data-url:/images/logo-link.svg');
+      --icon-custom-size: 4rem;
     }
   }
 }
