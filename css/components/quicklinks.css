@@ -2,11 +2,14 @@
 
 .c-quicklinks--cdl,
 .c-quicklinks--ucop {
+  --grid-repeat-count: auto-fit;
+
+  container-type: inline-size;
+
   & ul {
     all: unset;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-repeat-count), minmax(8rem, 1fr));
     gap: var(--space-sm);
     padding-block-end: var(--space-base);
     border-block-start: 3px solid var(--top-border);
@@ -16,6 +19,8 @@
 
   & li {
     all: unset;
+    display: flex;
+    justify-content: center;
   }
 
   & a {
@@ -38,6 +43,13 @@
       background-color: currentcolor;
       mask: var(--icon-url) center / var(--icon-custom-size, contain) no-repeat;
     }
+  }
+}
+
+@container (30rem <= width <= 55rem) {
+  .c-quicklinks--cdl ul,
+  .c-quicklinks--ucop ul {
+    --grid-repeat-count: 3;
   }
 }
 
