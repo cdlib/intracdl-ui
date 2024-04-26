@@ -10,8 +10,8 @@
     all: unset;
     display: grid;
     grid-template-columns: repeat(var(--grid-repeat-count), minmax(8rem, 1fr));
-    gap: var(--space-sm);
-    padding-block-end: var(--space-base);
+    gap: var(--space-base);
+    padding: var(--space-sm) var(--space-base) var(--space-base);
     border-block-start: 3px solid var(--top-border);
     border-radius: var(--border-block-end-radius);
     background-color: white;
@@ -26,7 +26,7 @@
   & a {
     display: flex;
     flex-direction: column;
-    inline-size: 7rem;
+    max-inline-size: 12rem;
     text-align: center;
     text-decoration: none;
 
