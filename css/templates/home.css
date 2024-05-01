@@ -100,4 +100,13 @@
   }
 }
 
+@media (width > 140rem) {
+  .t-home {
+    & .t-help-section,
+    & main {
+      grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    }
+  }
+}
+
 /* (1) Restyle all topicbox versions in the template help section by replacing the topicbox top border with a border under the topicbox header. */
