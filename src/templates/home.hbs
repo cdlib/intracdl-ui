@@ -1,8 +1,12 @@
 <div class="t-home js-home">
   <header>
     {{ render '@skipnav' }}
-    {{ render '@header' }}
-    {{ render '@banner' }}
+    <div class="t-header">
+      {{ render '@header' }}
+    </div>
+    <div class="t-banner">
+      {{ render '@banner' }}
+    </div>
     <div class="t-top-section">
       {{ render '@qlinks-header' }}
       {{ render '@quicklinks' }}
@@ -12,34 +16,44 @@
     </div>
     <div class="t-help-section">
       <h2 class="c-home-subheading">Help With&hellip;</h2>
-      {{ render '@topicbox' }}
-      {{ render '@topicbox--2' }}
-      {{ render '@topicbox' }}
-      {{ render '@topicbox--2' }}
+      <div class="t-topicbox-group">
+        {{ render '@topicbox' }}
+        {{ render '@topicbox--2' }}
+        {{ render '@topicbox' }}
+        {{ render '@topicbox--2' }}
+      </div>
     </div>
   </header>
   <main id="maincontent">
     <h2 id="all" class="c-home-subheading">About CDL</h2>
-    {{ render '@topicbox--3' }}
-    {{ render '@topicbox--3' }}
-    {{ render '@topicbox--3' }}
-    {{ render '@topicbox--3' }}
+    <div class="t-topicbox-group">
+      {{ render '@topicbox--3' }}
+      {{ render '@topicbox--3' }}
+      {{ render '@topicbox--3' }}
+      {{ render '@topicbox--3' }}
+    </div>
     <h2 class="c-home-subheading">Resources to Do Your Work</h2>
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
+    <div class="t-topicbox-group">
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+    </div>
     <h2 class="c-home-subheading">Communications</h2>
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
-    {{ render '@topicbox--4' }}
+    <div class="t-topicbox-group">
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+      {{ render '@topicbox--4' }}
+    </div>
     <h2 id="employee" class="c-home-subheading">Human Resources</h2>
-    {{ render '@topicbox--5' }}
-    {{ render '@topicbox--5' }}
-    {{ render '@topicbox--5' }}
-    {{ render '@topicbox--5' }}
+    <div class="t-topicbox-group">
+      {{ render '@topicbox--5' }}
+      {{ render '@topicbox--5' }}
+      {{ render '@topicbox--5' }}
+      {{ render '@topicbox--5' }}
+    </div>
   </main>
   <footer>
     {{ render '@footer' }}
