@@ -30,7 +30,6 @@
 .c-feature__media {
   grid-column: 1 / 3;
   grid-row: 2;
-  max-block-size: 27rem;
   border: 2px solid black;
 
   & img {
@@ -72,7 +71,7 @@
   }  
 }
 
-@media all and (width >= 50rem) and (not (90rem <= width <= 115rem)) {
+@media (width >= 50rem) {
   .c-feature {
     grid-template-columns: 1fr 1fr;
 
@@ -97,5 +96,42 @@
 
   .c-feature__links {
     grid-column: 2;
+  }
+}
+
+@media (width >= 90rem) {
+  .c-feature {
+    width: 99%;
+    height: 100%;
+    container-type: size;
+  }
+}
+
+@container (aspect-ratio <= 1.5/1) {
+  .c-feature {
+    grid-template-columns: 1fr auto;
+
+    & h1 {
+      grid-column: 1;
+    }
+
+    & time {
+      grid-column: 2;
+      place-self: end;
+    }
+
+    & p {
+      grid-column: 1 / 3;
+    }
+  }
+
+  .c-feature__media {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    max-block-size: 27rem;
+  }
+
+  .c-feature__links {
+    grid-column: 1 / 3;
   }
 }
