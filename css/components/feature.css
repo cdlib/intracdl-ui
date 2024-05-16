@@ -99,7 +99,7 @@
   }
 }
 
-@media (width >= 90rem) {
+@media (width >= 80rem) {
   .c-feature {
     width: 99%;
     height: 100%;
