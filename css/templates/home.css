@@ -1,6 +1,8 @@
 /**** Home Template ****/
 
 .t-home {
+  --content-width: 120rem;
+
   & .t-header,
   & .t-banner,
   & .t-top-section,
@@ -8,7 +10,7 @@
   & main,
   & > footer {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 120rem) 1fr;
+    grid-template-columns: 1fr minmax(auto, var(--content-width)) 1fr;
     column-gap: var(--space-base);
 
     & > * {
@@ -82,7 +84,7 @@
 @media (width >= 80rem) {
   .t-home {
     & .t-top-section {
-      grid-template-columns: 1fr minmax(0, 59.5rem) minmax(0, 59.5rem) 1fr;
+      grid-template-columns: 1fr minmax(40%, calc(.67 * var(--content-width) - .5rem)) minmax(10%, calc(.33 * var(--content-width) - .5rem)) 1fr;
 
       & .c-qlinks-header,
       & .c-quicklinks--cdl,
