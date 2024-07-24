@@ -23,7 +23,7 @@
     block-size: 2rem;
     inline-size: 2rem;
     background-color: black;
-    mask: url('data-url:/fa-light/circle-xmark.svg') center / contain;
+    mask: url('data-url:npm:fa-light/circle-xmark.svg') center / contain;
   }
 
   & p {
