@@ -62,8 +62,7 @@
   ],
   "@parcel/transformer-css": {
     "drafts": {
-      "customMedia": true,
-      "nesting": true
+      "customMedia": true
     },
     "errorRecovery": true
   },
