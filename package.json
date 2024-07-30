@@ -45,9 +45,9 @@
     "snazzy": "^9.0.0",
     "source-sans": "^3.46.0",
     "standard": "^17.1.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-property-sort-order-smacss": "^9.1.0",
-    "stylelint-config-standard": "^30.0.1"
+    "stylelint": "^16.8.1",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-standard": "^36.0.1"
   },
   "alias": {
     "fa-brands/*": "@fortawesome/fontawesome-pro/svgs/brands/$1",
