@@ -8,7 +8,7 @@ module.exports = {
   label: 'Post Date',
   context: {
     postdate: {
-      name: faker.name.fullName(),
+      name: faker.person.fullName(),
       date: postDate
     }
   }

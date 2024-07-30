@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/cdlib/intracdl-ui#readme",
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
+    "@faker-js/faker": "^8.4.1",
     "@fortawesome/fontawesome-pro": "^6.3.0",
     "@frctl/fractal": "^1.5.15",
     "@parcel/optimizer-data-url": "^2.12.0",
