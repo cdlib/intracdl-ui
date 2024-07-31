@@ -4,20 +4,20 @@
   padding-block: var(--space-base);
   background-color: var(--color-gold);
 
-  & header {
+  header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: var(--space-base);
   }
 
-  & h2 {
+  h2 {
     margin-block: 0 var(--space-base);
     font-size: 1.2rem;
     font-weight: 600;
   }
 
-  & button {
+  button {
     all: unset;
     flex: none;
     block-size: 2rem;
@@ -26,7 +26,7 @@
     mask: url('data-url:npm:fa-light/circle-xmark.svg') center / contain;
   }
 
-  & p {
+  p {
     margin-block: unset;
   }
 }

@@ -1,18 +1,18 @@
 /**** Post Date Component ****/
 
 .c-postdate {
-  & dl {
+  dl {
     all: unset;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 2rem;
   }
 
-  & div { /* term-description groups */
+  div { /* term-description groups */
     display: flex;
   }
 
-  & dt {
+  dt {
     font-weight: 600;
 
     &::after {
@@ -20,7 +20,7 @@
     }
   }
 
-  & dd {
+  dd {
     margin: unset;
   }
 }

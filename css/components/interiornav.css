@@ -4,7 +4,7 @@
   padding-inline: var(--space-sm);
   border-block-start: 3px solid var(--color-gold);
 
-  & header {
+  header {
     display: flex;
     justify-content: space-between;
     margin-inline: calc(var(--space-sm) * -1);
@@ -13,17 +13,17 @@
     color: white;
   }
   
-  & h2 {
+  h2 {
     margin-block: unset;
     font-size: 1.2rem;
     font-weight: 400;
   }
 
-  & h2 a {
+  h2 a {
     color: currentcolor;
   }
 
-  & header button {
+  header button {
     all: unset;
     flex: none;
     block-size: 1.2rem;
@@ -32,43 +32,43 @@
     mask: url('data-url:npm:fa-solid/caret-down.svg') center / 1.2rem no-repeat;
   }
 
-  & header button[aria-expanded='true'] {
+  header button[aria-expanded='true'] {
     transform: rotate(-180deg);
   }
 
-  & header button[hidden] {
+  header button[hidden] {
     display: none;
   }
 
-  & ul {
+  ul {
     all: unset;
     display: block;
   }
 
-  & ul ul {
+  ul ul {
     margin-block-end: 1.6rem;
     margin-inline-start: 0.8rem;
   }
 
-  & li {
+  li {
     margin-block: 0.8rem;
     font-size: 1.2rem;
     line-height: 1;
     list-style: none;
   }
 
-  & li:last-child,
-  & li:last-child ul {
+  li:last-child,
+  li:last-child ul {
     margin-block-end: unset;
   }
 
-  & li a[aria-current] {
+  li a[aria-current] {
     color: black;
     font-style: italic;
     font-weight: 700;
   }
 
-  & a {
+  a {
     text-decoration: none;
 
     &:active,

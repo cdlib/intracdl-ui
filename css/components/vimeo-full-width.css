@@ -6,8 +6,8 @@
 }
 
 .c-vimeo-full-width__caption {
-  & p:first-child,
-  & p:last-child {
+  p:first-child,
+  p:last-child {
     margin-block: unset;
   }
 }

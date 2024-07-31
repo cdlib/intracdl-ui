@@ -1,14 +1,14 @@
 /**** Breadcrumb Navigation ****/
 
 .c-breadcrumb {
-  & ul {
+  ul {
     all: unset;
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
   }
 
-  & li {
+  li {
     all: unset;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     }
   }
 
-  & a {
+  a {
     text-decoration: none;
 
     &:focus,

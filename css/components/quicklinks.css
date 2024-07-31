@@ -6,7 +6,7 @@
 
   container-type: inline-size;
 
-  & ul {
+  ul {
     all: unset;
     display: grid;
     grid-template-columns: repeat(var(--grid-repeat-count), minmax(8rem, 1fr));
@@ -17,13 +17,13 @@
     background-color: white;
   }
 
-  & li {
+  li {
     all: unset;
     display: flex;
     justify-content: center;
   }
 
-  & a {
+  a {
     display: flex;
     flex-direction: column;
     max-inline-size: 12rem;
@@ -56,7 +56,7 @@
 .c-quicklinks--cdl {
   --top-border: var(--color-gold);
 
-  & li {
+  li {
     &:first-child {
       --icon-url: url('data-url:npm:fa-solid/sitemap.svg');
     }
@@ -86,7 +86,7 @@
 .c-quicklinks--ucop {
   --top-border: var(--color-magenta);
 
-  & li {
+  li {
     &:first-child {
       --icon-url: url('data-url:npm:fa-solid/person-hiking.svg');
     }

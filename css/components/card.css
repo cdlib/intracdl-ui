@@ -14,7 +14,7 @@
   &:has(.c-card__caption) {
     grid-template-rows: auto;
 
-    & .c-card__figure {
+    .c-card__figure {
       grid-row: 1 / 3;
     }
   }
@@ -28,12 +28,12 @@
     }
   }
 
-  & h2 {
+  h2 {
     margin: unset;
     font-size: 1.3rem;
   }
 
-  & img {
+  img {
     inline-size: 100%;
   }
 }
@@ -46,7 +46,7 @@
 }
 
 .c-card__caption {
-  & p {
+  p {
     &:first-child {
       margin-block-start: unset;
     }

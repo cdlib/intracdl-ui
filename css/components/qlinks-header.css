@@ -7,14 +7,14 @@
   justify-content: space-between;
   gap: var(--space-base);
 
-  & h2 {
+  h2 {
     margin: unset;
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
   }
 
-  & a {
+  a {
     color: white;
 
     &:active,

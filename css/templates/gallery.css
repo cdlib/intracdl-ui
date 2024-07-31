@@ -12,8 +12,8 @@
   min-block-size: 100vh;
   background-color: var(--color-tan);
 
-  & > header,
-  & > footer {
+  > header,
+  > footer {
     display: grid;
     grid-column: 1 / 4;
     grid-template-columns: subgrid;
@@ -22,27 +22,27 @@
     background-color: black;
   }
 
-  & > footer {
+  > footer {
     margin-block-start: 3rem;
   }
 
-  & main {
+  main {
     display: grid;
     grid-column: 2;
     grid-template-columns: repeat(auto-fill, minmax(var(--min-column-width), 1fr));
     gap: var(--space-lg);
   }
 
-  & .c-header,
-  & .c-breadcrumb,
-  & .c-footer {
+  .c-header,
+  .c-breadcrumb,
+  .c-footer {
     grid-column: 2;
   }
 
-  & :where(h1, h2, h3, h4, h5, h6, p) {
+  :where(h1, h2, h3, h4, h5, h6, p) {
     grid-column: 1 / -1;
 
-    & + :where(h2, h3, h4, h5, h6, p) {
+    + :where(h2, h3, h4, h5, h6, p) {
       margin: 0;
     }
   }
