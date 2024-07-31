@@ -31,7 +31,7 @@
     block-size: 1rem;
     inline-size: 1rem;
     background-color: currentcolor;
-    mask-image: url('data-url:/fa-solid/caret-down.svg');
+    mask-image: url('data-url:npm:fa-solid/caret-down.svg');
     mask-position: center;
     mask-size: 1rem;
   }
@@ -43,7 +43,7 @@
 
   &::before {
     margin-block-start: 0.2rem;
-    mask-image: url('data-url:/fa-solid/caret-up.svg');
+    mask-image: url('data-url:npm:fa-solid/caret-up.svg');
   }
 }
 

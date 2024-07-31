@@ -4,56 +4,56 @@
   padding: var(--space-sm);
   border-block-start: 3px solid var(--color-blue);
   background-color: white;
-  box-shadow: 0 3px 5px oklch(0 0 0deg / 10%);
+  box-shadow: 0 3px 5px oklch(0% 0 0deg / 10%);
 
-  & header {
+  header {
     display: flex;
     justify-content: space-between;
     margin: calc(var(--space-sm) * -1);
     padding: var(--space-sm);
   }
 
-  & h2 {
+  h2 {
     margin-block: unset;
     font-size: 1.2rem;
     font-weight: 400;
   }
 
-  & h2 a {
+  h2 a {
     color: currentcolor;
   }
 
-  & header button {
+  header button {
     all: unset;
     flex: none;
     block-size: 1.2rem;
     inline-size: 1.2rem;
     background-color: black;
-    mask: url('data-url:/fa-solid/caret-down.svg') center / 1.2rem no-repeat;
+    mask: url('data-url:npm:fa-solid/caret-down.svg') center / 1.2rem no-repeat;
   }
 
-  & header button[aria-expanded='true'] {
+  header button[aria-expanded='true'] {
     transform: rotate(-180deg);
   }
 
-  & header button[hidden] {
+  header button[hidden] {
     display: none;
   }
 
-  & ul {
+  ul {
     all: unset;
     display: block;
     margin-inline-start: 0.8rem;
   }
 
-  & li {
+  li {
     margin-block: 0.8rem;
     font-size: 1.2rem;
     line-height: 1;
     list-style: none;
   }
 
-  & a {
+  a {
     text-decoration: none;
 
     &:active,

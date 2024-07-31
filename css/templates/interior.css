@@ -10,8 +10,8 @@
   min-block-size: 100vh;
   background-color: var(--color-tan);
 
-  & > header,
-  & > footer {
+  > header,
+  > footer {
     display: grid;
     grid-column: 1 / 4;
     grid-template-columns: subgrid;
@@ -20,11 +20,11 @@
     background-color: black;
   }
 
-  & > footer {
+  > footer {
     margin-block-start: 3rem;
   }
 
-  & main {
+  main {
     grid-column: 2;
     padding-block: var(--space-base);
     padding-inline: clamp(var(--space-base), 5vw - 1rem, 3rem);
@@ -33,10 +33,10 @@
     font-size: 1.2rem;
   }
 
-  & .c-header,
-  & .c-breadcrumb,
-  & .c-postdate,
-  & .c-footer {
+  .c-header,
+  .c-breadcrumb,
+  .c-postdate,
+  .c-footer {
     grid-column: 2;
   }
 }
@@ -45,7 +45,7 @@
 .t-interior-related-links {
   grid-template-rows: auto auto auto auto 1fr;
 
-  & aside {
+  aside {
     grid-column: 2;
   }
 }
@@ -62,20 +62,20 @@
     grid-template-columns: 1fr minmax(10vw, 20rem) minmax(auto, var(--template-max-main-width)) 1fr;
     grid-template-rows: auto auto auto 1fr;
 
-    & > header,
-    & > footer {
+    > header,
+    > footer {
       grid-column: 1 / 5;
     }
 
-    & main,
-    & .c-postdate {
+    main,
+    .c-postdate {
       grid-column: 3;
       margin-inline-start: var(--space-lg);
     }
 
-    & .c-header,
-    & .c-breadcrumb,
-    & .c-footer {
+    .c-header,
+    .c-breadcrumb,
+    .c-footer {
       grid-column: 2 / 4;
     }
   }

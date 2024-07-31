@@ -17,7 +17,7 @@ a[href^='mailto:'] {
     block-size: 1rem;
     inline-size: 1rem;
     background-color: currentcolor;
-    mask: url('data-url:/fa-regular/envelope.svg') center / contain no-repeat;
+    mask: url('data-url:npm:fa-regular/envelope.svg') center / contain no-repeat;
   }
 }
 
@@ -47,7 +47,7 @@ a > em:only-child {
 
 strong > a:only-child::after,
 a > strong:only-child::after {
-  mask: url('data-url:/fa-solid/circle-arrow-right.svg') center / contain no-repeat;
+  mask: url('data-url:npm:fa-solid/circle-arrow-right.svg') center / contain no-repeat;
 }
 
 /* Download link style using down arrow: */
@@ -57,6 +57,6 @@ a > em:only-child {
   font-style: normal;
 
   &::after {
-    mask: url('data-url:/fa-solid/circle-arrow-down.svg') center / contain no-repeat;
+    mask: url('data-url:npm:fa-solid/circle-arrow-down.svg') center / contain no-repeat;
   }
 }

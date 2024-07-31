@@ -6,7 +6,7 @@
 
   container-type: inline-size;
 
-  & ul {
+  ul {
     all: unset;
     display: grid;
     grid-template-columns: repeat(var(--grid-repeat-count), minmax(8rem, 1fr));
@@ -17,13 +17,13 @@
     background-color: white;
   }
 
-  & li {
+  li {
     all: unset;
     display: flex;
     justify-content: center;
   }
 
-  & a {
+  a {
     display: flex;
     flex-direction: column;
     max-inline-size: 12rem;
@@ -56,9 +56,9 @@
 .c-quicklinks--cdl {
   --top-border: var(--color-gold);
 
-  & li {
+  li {
     &:first-child {
-      --icon-url: url('data-url:/fa-solid/sitemap.svg');
+      --icon-url: url('data-url:npm:fa-solid/sitemap.svg');
     }
 
     &:nth-child(2) {
@@ -66,11 +66,11 @@
     }
 
     &:nth-child(3) {
-      --icon-url: url('data-url:/fa-regular/file-invoice-dollar.svg');
+      --icon-url: url('data-url:npm:fa-regular/file-invoice-dollar.svg');
     }
 
     &:nth-child(4) {
-      --icon-url: url('data-url:/fa-solid/pen-to-square.svg');
+      --icon-url: url('data-url:npm:fa-solid/pen-to-square.svg');
     }
 
     &:nth-child(5) {
@@ -78,7 +78,7 @@
     }
 
     &:last-child {
-      --icon-url: url('data-url:/fa-brands/github-alt.svg');
+      --icon-url: url('data-url:npm:fa-brands/github-alt.svg');
     }
   }
 }
@@ -86,21 +86,21 @@
 .c-quicklinks--ucop {
   --top-border: var(--color-magenta);
 
-  & li {
+  li {
     &:first-child {
-      --icon-url: url('data-url:/fa-solid/person-hiking.svg');
+      --icon-url: url('data-url:npm:fa-solid/person-hiking.svg');
     }
   
     &:nth-child(2) {
-      --icon-url: url('data-url:/fa-solid/business-time.svg');
+      --icon-url: url('data-url:npm:fa-solid/business-time.svg');
     }
   
     &:nth-child(3) {
-      --icon-url: url('data-url:/fa-solid/user-headset.svg');
+      --icon-url: url('data-url:npm:fa-solid/user-headset.svg');
     }
   
     &:nth-child(4) {
-      --icon-url: url('data-url:/fa-solid/graduation-cap.svg');
+      --icon-url: url('data-url:npm:fa-solid/graduation-cap.svg');
     }
   
     &:nth-child(5) {

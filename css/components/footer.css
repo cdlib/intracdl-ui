@@ -8,7 +8,7 @@
   gap: var(--space-base);
   padding-block: var(--space-lg);
 
-  & ul {
+  ul {
     all: unset;
     display: flex;
     flex: 1 1 auto;
@@ -17,11 +17,11 @@
     gap: var(--space-base);
   }
 
-  & li {
+  li {
     all: unset;
   }
 
-  & a {
+  a {
     color: white;
     text-decoration: none;
 

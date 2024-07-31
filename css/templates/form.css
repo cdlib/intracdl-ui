@@ -63,7 +63,7 @@
   border-style: none;
   border-radius: var(--border-radius);
   background-color: var(--color-blue);
-  box-shadow: 3px 3px 3px oklch(0 0 0deg / 10%);
+  box-shadow: 3px 3px 3px oklch(0% 0 0deg / 10%);
   color: white;
 
   &:active,

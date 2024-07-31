@@ -8,8 +8,8 @@
   min-block-size: 100vh;
   background-color: var(--color-tan);
 
-  & > header,
-  & > footer {
+  > header,
+  > footer {
     display: grid;
     grid-column: 1 / 4;
     grid-template-columns: subgrid;
@@ -18,18 +18,18 @@
     background-color: black;
   }
 
-  & > footer {
+  > footer {
     margin-block-start: 3rem;
   }
 
-  & main {
+  main {
     grid-column: 2;
     font-size: 1.2rem;
   }
 
-  & .c-header,
-  & .c-breadcrumb,
-  & .c-footer {
+  .c-header,
+  .c-breadcrumb,
+  .c-footer {
     grid-column: 2;
   }
 }
