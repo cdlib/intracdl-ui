@@ -4,7 +4,7 @@ module.exports = {
   label: 'Feature',
   context: {
     feature: {
-      caption: faker.lorem.sentence(8),
+      caption: faker.lorem.sentences(2, '</p>\n<p>'),
       image: faker.image.urlPicsumPhotos()
     }
   }

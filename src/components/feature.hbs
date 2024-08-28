@@ -1,7 +1,9 @@
 <article class="c-feature">
   <h1>Latest Video Recording</h1>
   <time datetime="2022-09-18">18 August 2022</time>
-  <p>{{ feature.caption }}</p>
+  <div class="c-feature__caption">
+    <p>{{{ feature.caption }}}</p>
+  </div>
   <div class="c-feature__media">
     <img src="{{ feature.image }}" alt="Random nature scene">
   </div>
